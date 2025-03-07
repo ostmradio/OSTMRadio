@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" type="image/png" href="/img/OSTMSharpLogoWhite.png">
+    <style>
+        body {
+            background-color: #000; /* Black background to match the theme */
+            color: #fff; /* White text for contrast */
+            font-family: 'Arial', sans-serif; /* Generic font to match the modern aesthetic */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .not-found-container {
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+        h1 {
+            font-size: 72px;
+            color: #fff;
+        }
+        p {
+            font-size: 24px;
+            color: #fff;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #fff; /* White button to match the logo */
+            color: #000; /* Black text on the button for readability */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #e5e5e5; /* Light grey for hover effect */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .logo {
+            width: 200px; /* Adjust as needed */
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <img src="/img/OSTMSharpLogoWhite.png" alt="OSTM Logo" class="logo">
+    <div class="not-found-container">
+        <h1>Page Not Found</h1>
+        <p>We're sorry, but the page you were looking for could not be found.</p>
+        <button onclick="window.location.href='/'" class="back-button">Go Back Home</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen"
+    },
+    {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin"
+    },
+    {
+        "title": "Sweet Child o' Mine",
+        "artist": "Guns N' Roses"
+    },
+    {
+        "title": "Hotel California",
+        "artist": "The Eagles"
+    },
+    {
+        "title": "Imagine",
+        "artist": "John Lennon"
+    },
+    {
+        "title": "Born to Run",
+        "artist": "Bruce Springsteen"
+    },
+    {
+        "title": "Yesterday",
+        "artist": "The Beatles"
+    },
+    {
+        "title": "Like a Rolling Stone",
+        "artist": "Bob Dylan"
+    },
+    {
+        "title": "I Can't Get No Satisfaction",
+        "artist": "The Rolling Stones"
+    },
+    {
+        "title": "What's Going On",
+        "artist": "Marvin Gaye"
+    }
+]

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--Headder Start-->
+<head>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8863715620158289"
+            crossorigin="anonymous"></script>
+
+    <title>OSTM Radio - audioPlayer</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to OSTM Radio! we are the only youth run radio stations in the UK. Featuring the best in indie rock!">
+    <meta name="keywords" content="radio 2,radio 1,radio times,bbc radio 2,radio 4,radio 4 schedule,heart radio,bbc radio 4,absolute radio,greatest hits radio,radio times tv guide,bbc radio 1,smooth radio,radio,radio 5 live,ibc radio,rado x,magic radio,radio 4 live,radio,live,music,indie,rock,manchester,uk,london,jobs,times,on,quiz,and,me,of,fm,lyrics,songs,2,4,dj,green day,nirvana,artic monkeys,acdc,quarantine the past,the maccabees,app,schedule">
+    <meta name="author" content="OSTM Radio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+</head>
+    </section>
+
+    <!-- Audio Player -->
+<div id="audio-player">
+    <div id="now-playing">
+        <audio id="live-audio">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="live-play-button"><i class="fa fa-play"></i></button>
+        <img src="img/OSTMSharpLogoWhiteBG.png" id="album-art" alt="Album art for the currently playing song">
+        <div id="song-info">
+            <h3 id="station-name">OSTM Radio</h3>
+            <p id="song-name">LIVE</p>
+        </div>
+    </div>
+    <div id="listener-timer">
+        <span id="time-elapsed">0:00</span>
+        <div id="volume-controls">
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+</div>
+<!-- Audio Player end -->
+
+<!--====== Javascripts & Jquery ======-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/circle-progress.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wavesurfer.min.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/live-stream-info.js"></script>
+
+<script>
+    // Check if the main stream is available, if not, switch to the backup stream
+    var mainStream = "https://listen.openstream.co/6235/audio";
+    var backupStream = "https://stream.zeno.fm/1vx25xbdmzzuv";
+
+    var liveAudio = document.getElementById("live-audio");
+
+    liveAudio.onerror = function() {
+        // Error occurred, switch to the backup stream
+        liveAudio.src = backupStream;
+      console.log("backup not working");
+    };
+
+    // Set the source to the main stream initially
+    liveAudio.src = mainStream;
+    debug("backup not working");
+</script>
+
+
+</body>
+</html>

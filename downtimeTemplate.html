@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OSTM Radio Maintenance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            margin: 100px auto;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        #countdown {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <script>// Function to calculate the countdown
+        function calculateCountdown() {
+            var now = new Date();
+            var target = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 17, 0, 0); // Set the target time to 17:00
+
+            var timeDiff = target.getTime() - now.getTime();
+            if (timeDiff <= 0) {
+                clearInterval(timer); // Stop the timer if the target time has passed
+                document.getElementById("countdown").innerHTML = "Maintenance in progress";
+                return;
+            }
+
+            var seconds = Math.floor(timeDiff / 1000) % 60;
+            var minutes = Math.floor(timeDiff / (1000 * 60)) % 60;
+            var hours = Math.floor(timeDiff / (1000 * 60 * 60)) % 24;
+            var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+            document.getElementById("countdown").innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+        }
+
+        // Start the countdown when the page loads
+        window.onload = function () {
+            calculateCountdown();
+            var timer = setInterval(calculateCountdown, 1000);
+        };</script>
+</head>
+<body>
+    <h1>OSTM Radio is currently under maintenance</h1>
+    <p>Estimated return: <span id="countdown"></span></p>
+</body>
+</html>
