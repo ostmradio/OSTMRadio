@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8863715620158289"
+            crossorigin="anonymous"></script>
+
+    <title>OSTM Radio - Advertise</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact OSTM Radio here with any question and we will be sure to answer your question here!">
+    <meta name="keywords" content="radio 2,radio 1,radio times,bbc radio 2,radio 4,radio 4 schedule,heart radio,bbc radio 4,absolute radio,greatest hits radio,radio times tv guide,bbc radio 1,smooth radio,radio,radio 5 live,ibc radio,rado x,magic radio,radio 4 live,radio,live,music,indie,rock,manchester,uk,london,jobs,times,on,quiz,and,me,of,fm,lyrics,songs,2,4,dj,green day,nirvana,artic monkeys,acdc,quarantine the past,the maccabees,app,schedule,contact,advertise,free">
+    <meta name="author" content="OSTM Radio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="/assets/img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <!--<link rel="stylesheet" href="/css/font-awesome.min.css" /> OLD FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/assets/css/flaticon.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+
+</head>
+<body>
+
+    <!-- Header section -->
+    <div data-include="/assets/templates/header.html"></div>
+    <!-- Header section end -->
+
+    <br>
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Advertise</h2>
+        </div>
+    </div>
+    </section>
+    <!--  section end -->
+    <!-- Add advertise section below here -->
+    <section class="advertising-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form id="advertise-form" onsubmit="submitForm(); return false;">
+                        <div class="form-group">
+                            <label for="name" style="color: white;">Name <span style="color: red;">*</span></label>
+                            <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="color: white;">Email <span style="color: red;">*</span></label>
+                            <input type="email" id="email" class="form-control" required placeholder="example@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="objective" style="color: white;">Advertising Objective <span style="color: red;">*</span></label>
+                            <input type="text" id="objective" class="form-control" required placeholder="Increase brand awareness, drive sales, promote a new product/service, other.">
+                        </div>
+                        <div class="form-group">
+                            <label for="target-audience" style="color: white;">Target Audience <span style="color: red;">*</span></label>
+                            <input type="text" id="target-audience" class="form-control" required placeholder="Young people, aged 18-25.">
+                        </div>
+                        <div class="form-group">
+                            <label for="preferred-channel" style="color: white;">Preferred Advertising Channel <span style="color: red;">*</span></label>
+                            <input type="text" id="preferred-channel" class="form-control" required placeholder="Radio spots, website banners, social media, other.">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration" style="color: white;">Campaign Duration <span style="color: red;">*</span></label>
+                            <input type="text" id="duration" class="form-control" required placeholder="Enter the desired duration for your advertising campaign (e.g., number of weeks or specific dates).">
+                        </div>
+                        <div class="form-group">
+                            <label for="budget" style="color: white;">Budget <span style="color: red;">*</span></label>
+                            <input type="text" id="budget" class="form-control" required placeholder="Specify your budget in GBP (British Pounds).">
+                        </div>
+                        <div class="form-group">
+                            <label for="additional-information" style="color: white;">Additional Information</label>
+                            <textarea id="additional-information" class="form-control" rows="4" placeholder="Add any additional information here."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="background-color: #ffe400; color: black;">Submit</button>
+                    </form>
+                    <div id="form-sent-text" style="display: none; text-align: center; margin-top: 10px;">
+                        <p style="font-size: 20px; font-weight: bold;">Form Sent</p>
+                        <p style="font-size: 16px;">Thank you for your inquiry. We will get back to you soon.</p>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  join us section end -->
+    <!-- JavaScript code -->
+    <script>function submitForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var targetAudience = document.getElementById('target-audience').value;
+            var preferredChannel = document.getElementById('preferred-channel').value;
+            var budget = document.getElementById('budget').value;
+            var additionalInformation = document.getElementById('additional-information').value;
+
+            var payload = {
+                content: `-----\nAdvertising Form\nName: ${name}\nEmail: ${email}\nTarget Audience: ${targetAudience}\nPreferred Channel: ${preferredChannel}\nBudget: ${budget}\nAdditional Information: ${additionalInformation}`
+            };
+
+            var webhookUrl = 'https://discord.com/api/webhooks/1106573208339107890/xNTdDM857jg_gt5oPP6i0ZUzaHiBj1uPBZXC0dyOO4FJmBhXIV6MaR6yfqy84HPT9D0I';
+            var request = new XMLHttpRequest();
+            request.open('POST', webhookUrl);
+            request.setRequestHeader('Content-type', 'application/json');
+            request.send(JSON.stringify(payload));
+
+
+            //alert('Advertisement inquiry submitted successfully!');
+
+            // Hide form elements and show "Form Sent" text
+            var form = document.getElementById('advertise-form');
+            form.style.display = 'none';
+            var formSentText = document.getElementById('form-sent-text');
+            formSentText.style.display = 'block';
+        }</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  join us section end -->
+    <!-- Footer Top section -->
+    <div data-include="/assets/templates/footer.html"></div>
+    <!-- Footer section end -->
+    <!-- Audio Player -->
+    <div id="audio-player-iframe">
+        <iframe src="audioPlayer.html" height="60" width="100%"></iframe>
+    </div>
+
+    <!--Audio Player end -->
+    <!--Empty space at the bottom of the page for iframe-->
+    <div style="height: 100px;"></div>
+    <!--Empty space at the bottom of the page for iframe-->
+    <!--====== Javascripts & Jquery ======-->
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/circle-progress.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/include.js"></script>
+
+
+    <!-- load for map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
+    <script src="/assets/js/map.js"></script>
+
+</body>
+</html>

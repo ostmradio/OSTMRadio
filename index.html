@@ -13,66 +13,31 @@
     <meta name="author" content="OSTM Radio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link href="/assets/img/favicon.ico" rel="shortcut icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <!--<link rel="stylesheet" href="/css/font-awesome.min.css" /> OLD FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <link rel="stylesheet" href="css/jquery-ui.min.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/assets/css/flaticon.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
 
 </head>
   <!--Headder End-->
 <body>
 
     <!-- Header section -->
-    <header class="header-section">
-        <div class="header-warp">
-            <!-- Site Logo -->
-            <a href="/" class="site-logo">
-                <img src="img/OSTMSharpLogoWhite.png" width="118" height="" alt="">
-            </a>
-            <!-- responsive -->
-            <div class="nav-switch">
-                <i class="fa fa-bars"></i>
-            </div>
-            <!-- Main Menu -->
-            <ul class="main-menu">
-                <li class="active"><a href="/">Home</a></li>
-
-                <li><a href="#" onClick="MyWindow=window.open('/playlive/','MyWindow','width=385,height=700'); return false;">Live</a></li>
-
-                <li><a target="_blank" href="https://blog.ostm.co.uk/">Blog</a></li>
-                <li><a href="podcasts.html">Podcasts</a></li>
-                <li><a href="playlist.html">Playlist</a></li>
-                <li><a href="shows.html">Shows</a></li>
-                <li><a href="app.html">App</a></li>
-                <li><a href="advertise.html">Advertise</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <!-- Social Links -->
-            <div class="header-social-links">
-                <a target="_blank" href="https://open.spotify.com/show/6It3ofJUifhK1ZyHKQDRiA"><i class="fa-brands fa-spotify"></i></a>
-                <a target="_blank" href="https://podcasts.apple.com/gb/podcast/the-unrelated-podcast/id1606907162?i=1000548938849"><i class="fa fa-podcast"></i></a>
-                <a target="_blank" href="https://music.amazon.co.uk/podcasts/50108377-6f57-4795-a072-aa4ca7cf773b/the-unrelated-podcast"><i class="fa-brands fa-amazon"></i></a>
-                <a target="_blank" href="https://x.com/OstmRadio"><i class="fa-brands fa-x-twitter"></i></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCHy8YcpdCDuMjODx52ZouNA"><i class="fa-brands fa-youtube"></i></a>
-                <a target="_blank" href="https://www.instagram.com/ostmradio/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </div>
-
-    </header>
+    <div data-include="/assets/templates/header.html"></div>
 
     <!--Headder End-->
     <!-- Hero section -->
-    <section class="hero-section set-bg" data-setbg="img/bg.jpg">
+    <section class="hero-section set-bg" data-setbg="/assets/img/bg.jpg">
         <div class="locations d-none d-sm-block">
             <div class="container">
                 <div class="row">
@@ -86,28 +51,29 @@
         <div class="hero-slider owl-carousel">
             <div class="hs-item">
                 <div class="container">
-                    <span>Volunteer</span>
-                    <h2>Volunteer at OSTM Radio today!</h2><br>
-                    <h2><a targer="_blank" href="https://www.ostm.co.uk/volunteer.html">Click here to volunteer</a></h2>
+                    <span>24/7 Indie & Alternative Radio</span>
+                    <h2>Real music from real independent artists</h2><br>
+                    <h2>Broadcasting straight from Manchester</h2>
                 </div>
             </div>
             <div class="hs-item">
                 <div class="container">
-                    <span>Live!</span>
-                    <h2>OSTM Radio is live 24/7!</h2>
+                    <span>Submit your music</span>
+                    <h2>Are you an independent artist? Get your tracks played on OSTM Radio</h2>
+                    <h2><a targer="_blank" href="/publish/">Submit Here</a></h2>
                 </div>
             </div>
             <div class="hs-item">
                 <div class="container">
-                    <span>Genre</span>
-                    <h2>We play alternative/rock music!</h2>
+                    <span>Growing Onto DAB & FM</span>
+                    <h2>We’re expanding OSTM Radio with a brand-new studio and on-air broadcasting</h2>
                 </div>
             </div>
             <div class="hs-item">
                 <div class="container">
-                    <span>Donate to us!</span>
-                    <h2>All our donations help to improve OSTM Radio and 50% of each donation goes to charity!</h2><br>
-                    <h2><a targer="_blank" href="https://www.buymeacoffee.com/admin5">Buy me a coffee!</a></h2>
+                    <span>Listen Again</span>
+                    <h2>Catch up on past shows, special broadcasts, and exclusive recordings</h2><br>
+                    <h2><a href="/replays/">Replays</a></h2>
                 </div>
             </div>
         </div>
@@ -118,28 +84,35 @@
     <section class="promotion-section">
         <div class="container">
             <div class="row">
-                <a href="/shows.html">
-                    <div class="col-md-4">
-                        <div class="promo-box set-bg" data-setbg="img/promo/1.jpg">
-                            <h2>Our Shows</h2>
-                        </div>
-                </a>
-            </div>
-            <a href="#" onClick="MyWindow=window.open('https://www.ostm.co.uk/playlive/','MyWindow','width=385,height=700'); return false;">
+
+                <!-- Replays -->
                 <div class="col-md-4">
-                    <div class="promo-box set-bg" data-setbg="img/promo/2.jpg">
-                        <h2>Live</h2>
-                    </div>
-            </a>
-        </div>
-        <a target="_blank" href="https://blog.ostm.co.uk/">
-            <div class="col-md-4">
-                <div class="promo-box set-bg" data-setbg="img/promo/3.jpg">
-                    <h2>Blog</h2>
+                    <a href="/replays/">
+                        <div class="promo-box set-bg" data-setbg="/assets/img/promo/1.jpg">
+                            <h2>Replays</h2>
+                        </div>
+                    </a>
                 </div>
-        </a>
-        </div>
-        </div>
+
+                <!-- Live Radio -->
+                <div class="col-md-4">
+                    <a href="#" onclick="MyWindow=window.open('/live/','MyWindow','width=385,height=700'); return false;">
+                        <div class="promo-box set-bg" data-setbg="/assets/img/promo/2.jpg">
+                            <h2>Live</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Submit Music -->
+                <div class="col-md-4">
+                    <a href="/publish/" target="_blank" rel="noopener">
+                        <div class="promo-box set-bg" data-setbg="/assets/img/promo/3.jpg">
+                            <h2>Submit Music</h2>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
         </div>
     </section>
     <!-- promotion section end -->
@@ -162,81 +135,13 @@
     </section>
 
 
-    <!-- Footer Top section -->
-    <section class="footer-top-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 ft-widget">
-                    <div class="ft-title">
-                        <h4>Top Shows</h4>
-                    </div>
-                    <ul class="order-list">
-                        <li><a href="https://www.ostm.co.uk/shows.html"><span>1</span>DJ Kali</a></li>
-                        <li><a href="https://www.ostm.co.uk/theunrelatedpodcast.html"><span>2</span>The UNREALTED Podcast</a></li>
-                        <li><a href="#" onClick="MyWindow=window.open('https://www.ostm.co.uk/playlive/','MyWindow','width=385,height=700'); return false;"><span>3</span>Live</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 ft-widget">
-                    <div class="ft-title">
-                        <h4>Contact</h4>
-                    </div>
-                    <div class="ft-contact-widget">
-                        <p><span>E:</span> admin@ostm.co.uk</p>
-                        <p><span>E:</span> theunrelatedpodcast@ostm.co.uk</p>
-                        <img src="img/OSTMSharpLogoWhite.png" class="footer-logo" alt="">
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 ft-widget">
-                    <div class="ft-title">
-                        <h4>Links</h4>
-                    </div>
-                    <li class="active"><a href="/">Home</a></li>
-
-                    <li><a href="#" onClick="MyWindow=window.open('https://www.ostm.co.uk/playlive/','MyWindow','width=385,height=700'); return false;">Live</a></li>
-
-                    <li><a target="_blank" href="https://blog.ostm.co.uk/">Blog</a></li>
-                    <li><a href="podcasts.html">Podcast</a></li>
-                    <li><a href="playlist.html">Playlist</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                    <li><a href="app.html">App</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="advertise.html">Advertise With Us</a></li>
-                    <li><a href="volunteer.html">Volunteer For Us</a></li>
-                    <li><a href="music-publishing-form.html">Publish Your Music</a></li>
-                </div>
-                <div class="col-lg-3 col-md-6 ft-widget">
-                    <div class="ft-title">
-                        <h4>Join our newsletter</h4>
-                    </div>
-                    <div class="ft-contact-widget">
-                        <div class="footer-social-links">
-                            <!--ADD NEWSLETTER STUFF HERE-->
-                            <script type="text/javascript" src="https://campaigns.zoho.eu/js/zc.iframe.js"></script>
-                            <iframe scrolling="no" frameborder="0" id="iframewin" width="130%" height="110%" src="https://zc1.maillist-manage.eu/ua/Optin?od=12ba7e639cdd&zx=14ac62610a&sD=114f9f0e134b28c1"></iframe>
-
-                            <!--END NEWSLETTER STUFF HERE-->
-                        </div>
-                    </div>
-                </div>
-    </section>
-
-    <!-- Footer Top section end -->
-
-    <!-- Footer section -->
-    <footer class="footer-section">
-        <div class="contaoner">
-            <p>
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script> All rights reserved | OSTM LTD</a>
-            </p>
-        </div>
-    </footer>
-    <!-- Footer section end -->
+    <!-- Footer -->
+    <div data-include="/assets/templates/footer.html"></div>
+    <!-- Footer end -->
 
     <!-- Audio Player -->
     <div id="audio-player-iframe">
-        <iframe src="audioPlayer.html" height="60" width="100%"></iframe>
+        <iframe src="/assets/templates/audioPlayer.html" height="60" width="100%"></iframe>
     </div>
 
     <!--Audio Player end -->
@@ -246,16 +151,17 @@
     <!--Empty space at the bottom of the page for iframe-->
 
     <!--====== Javascripts & Jquery ======-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/circle-progress.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/circle-progress.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 
-    <script src="js/wavesurfer.min.js"></script>
-    <script src="js/audio.js"></script>
-    <script src="js/live-stream-info.js"></script>
+    <script src="/assets/js/wavesurfer.min.js"></script>
+    <script src="/assets/js/audio.js"></script>
+    <script src="/assets/js/live-stream-info.js"></script>
+    <script src="/assets/js/include.js"></script>
 
 </body>
 </html>

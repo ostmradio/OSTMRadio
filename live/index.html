@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>OSTM Radio - Live</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Font Awesome v4 (your CSS uses v4 icon codes) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/live/style.css">
+</head>
+<body>
+<article class="screen">
+	<!-- kept for original CSS hooks -->
+	<input type="checkbox" value="None" id="magicButton" name="check"/>
+	<label class="main" for="magicButton"></label>
+
+	<!-- Top image area -->
+	<div class="coverImage" role="img" aria-label="OSTM Radio cover"></div>
+
+	<!-- Bottom panel -->
+	<div class="bodyPlayer">
+		<div class="info">
+			<h4>OSTM Radio</h4>
+			<!-- This is where live-stream-info.js writes the current title -->
+			<div id="song-name" class="muted">LIVE</div>
+		</div>
+
+		<div class="controls" aria-label="Player controls">
+			<button class="btn-icon" id="playBtn" title="Play / Pause" aria-label="Play">
+				<i class="fa fa-play"></i>
+			</button>
+		</div>
+
+		<div class="volume-wrap">
+			<input id="vol" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+		</div>
+	</div>
+
+	<!-- Stream (src set on first play) -->
+	<audio id="audio" preload="none" crossorigin="anonymous"></audio>
+</article>
+
+<!-- jQuery required by /assets/live-stream-info.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Your existing metadata poller (updates #song-name) -->
+<script src="/assets/js/live-stream-info.js"></script>
+<!-- Your player logic (play/pause/icons/volume) -->
+<script src="/live/script.js"></script>
+</body>
+</html>
