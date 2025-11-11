@@ -1,14 +1,3 @@
-/* =================================
-------------------------------------
-  88.0 - Radio Station Template
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
-
 html,
 body {
 	height: 100%;
@@ -650,6 +639,11 @@ li:hover .sub-menu {
 	left: 0;
 	bottom: -1px;
 	background: #ffe400;
+}
+
+/* Mobile menu open */
+.main-menu.open {
+	display: block !important;
 }
 
 .header-social-links {
@@ -1929,9 +1923,11 @@ li:hover .sub-menu {
 		padding: 15px 20px;
 		position: relative;
 	}
+
 	.header-social-links {
 		display: none;
 	}
+
 	.nav-switch {
 		position: absolute;
 		height: 100%;
@@ -1949,6 +1945,7 @@ li:hover .sub-menu {
 		-ms-flex-align: center;
 		align-items: center;
 	}
+
 	.main-menu {
 		display: none;
 		position: absolute;
@@ -1961,61 +1958,75 @@ li:hover .sub-menu {
 		z-index: 999;
 		padding-left: 0;
 	}
+
 	.main-menu li {
 		display: block;
 		border-top: 1px solid #2f2f2f;
 	}
+
 	.main-menu li a {
 		display: block;
 		padding: 15px 30px;
 		color: #fff;
 	}
+
 	.hs-item .container {
 		padding-left: 15px;
 	}
+
 	.hero-slider .owl-nav .owl-next,
 	.hero-slider .owl-nav .owl-prev,
 	.hero-slider .owl-nav {
 		display: none;
 	}
+
 	.promo-box {
 		margin-bottom: 30px;
 	}
+
 	.albam-preview img {
 		min-width: 100%;
 		margin-bottom: 40px;
 	}
+
 	.audio-wave {
 		margin-left: 0;
 	}
+
 	.ft-widget {
 		margin-bottom: 30px;
 	}
+
 	.about-box .ab-pull,
 	.about-box .ab-push {
 		left: 0;
 	}
+
 	.service-box {
 		margin-bottom: 30px;
 	}
+
 	.col-1-5 {
 		width: 50%;
 	}
+
 	.dj-single:hover .dj-social-links {
 		float: right;
 		clear: inherit;
 	}
+
 	.dj-social-links a {
 		width: 35px;
 		height: 35px;
 		margin-left: 5px;
 		font-size: 14px;
 	}
+
 	.location-links a {
 		margin-right: 30px;
 	}
 
-	#song-info{
+	#song-info {
 		flex-direction: column; /* stack elements vertically */
 		text-align: center; /* center text */
 		font-size: 14px;
@@ -2024,6 +2035,7 @@ li:hover .sub-menu {
 	#volume-slider {
 		display: none;
 	}
+}
 
 
 /* Medium Mobile :480px. */
@@ -2072,3 +2084,4 @@ textarea {
     color: #fff;
     text-align: center;
 }
+
