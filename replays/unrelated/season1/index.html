@@ -7,8 +7,8 @@
     
     <title>OSTM Radio - The UNRELATED Podcast</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Listen to The UNRELATED Podcast by OSTM Radio right here!">
-    <meta name="keywords" content="radio 2,radio 1,radio times,bbc radio 2,radio 4,radio 4 schedule,heart radio,bbc radio 4,absolute radio,greatest hits radio,radio times tv guide,bbc radio 1,smooth radio,radio,radio 5 live,ibc radio,rado x,magic radio,radio 4 live,radio,live,music,indie,rock,manchester,uk,london,jobs,times,on,quiz,and,me,of,fm,lyrics,songs,2,4,dj,green day,nirvana,artic monkeys,acdc,quarantine the past,the maccabees,app,schedule">
+    <meta name="description" content="Stream every episode of The UNRELATED Podcast Season 1 on OSTM Radio. Relive the original series with full replay access.">
+      <meta name="keywords" content="The UNRELATED Podcast Season 1, podcast season 1, OSTM podcast archive, independent podcast, listen podcast episodes">
     <meta name="author" content="OSTM Radio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->   
@@ -27,7 +27,99 @@
     <link rel="stylesheet" href="/assets/css/owl.carousel.css"/>
     <link rel="stylesheet" href="/assets/css/style.css"/>
     <link rel="stylesheet" href="/assets/css/animate.css"/>
-  
+
+      <!-- JSON-LD -->
+      <script type="application/ld+json">
+          {
+              "@context": "https://schema.org",
+              "@graph": [
+                  {
+                      "@type": "Organization",
+                      "@id": "https://ostm.co.uk/#org",
+                      "name": "OSTM LTD",
+                      "alternateName": "OSTM Radio",
+                      "url": "https://ostm.co.uk/",
+                      "logo": "https://ostm.co.uk/assets/img/OSTMSharpLogoWhite.png",
+                      "sameAs": [
+                          "https://x.com/OstmRadio",
+                          "https://www.instagram.com/ostmradio/",
+                          "https://www.youtube.com/@ostmradio"
+                      ],
+                      "contactPoint": [{
+                          "@type": "ContactPoint",
+                          "contactType": "customer support",
+                          "email": "admin@ostm.co.uk",
+                          "areaServed": "GB",
+                          "availableLanguage": ["en-GB","en"]
+                      }]
+                  },
+                  {
+                      "@type": "WebSite",
+                      "@id": "https://ostm.co.uk/#website",
+                      "name": "OSTM Radio",
+                      "url": "https://ostm.co.uk/",
+                      "publisher": { "@id": "https://ostm.co.uk/#org" },
+                      "inLanguage": "en-GB"
+                  },
+                  {
+                      "@type": "RadioStation",
+                      "@id": "https://ostm.co.uk/#station",
+                      "name": "OSTM Radio",
+                      "url": "https://ostm.co.uk/",
+                      "areaServed": "GB",
+                      "broadcaster": { "@id": "https://ostm.co.uk/#org" },
+                      "sameAs": [
+                          "https://x.com/OstmRadio",
+                          "https://www.instagram.com/ostmradio/",
+                          "https://www.youtube.com/@ostmradio"
+                      ],
+                      "genre": ["Indie","Alternative"],
+                      "broadcastService": {
+                          "@type": "RadioBroadcastService",
+                          "name": "OSTM Radio Live",
+                          "url": "https://ostm.co.uk/live/",
+                          "broadcastDisplayName": "OSTM Radio",
+                          "areaServed": "GB",
+                          "genre": ["Indie","Alternative"],
+                          "callSign": "OSTM",
+                          "broadcastFrequency": "Online",
+                          "broadcastAffiliateOf": { "@id": "https://ostm.co.uk/#org" },
+                          "webcast": "https://listen.openstream.co/6235/audio"
+                      }
+                  }
+              ]
+          }
+      </script>
+
+      <script type="application/ld+json">
+          {
+              "@context": "https://schema.org",
+              "@graph": [
+                  {
+                      "@type": "CollectionPage",
+                      "@id": "https://ostm.co.uk/replays/unrelated/season1/#webpage",
+                      "url": "https://ostm.co.uk/replays/unrelated/season1/",
+                      "name": "The UNRELATED Podcast – Season 1 | OSTM Radio",
+                      "isPartOf": { "@id": "https://ostm.co.uk/#website" },
+                      "about": { "@id": "https://ostm.co.uk/replays/unrelated/#series" },
+                      "inLanguage": "en-GB",
+                      "description": "Relive Season 1 of The UNRELATED Podcast on OSTM Radio. Stream the full archive of every episode from the first season."
+                  },
+                  {
+                      "@type": "PodcastSeason",
+                      "@id": "https://ostm.co.uk/replays/unrelated/season1/#season",
+                      "name": "The UNRELATED Podcast – Season 1",
+                      "partOfSeries": { "@id": "https://ostm.co.uk/replays/unrelated/#series" },
+                      "url": "https://ostm.co.uk/replays/unrelated/season1/",
+                      "inLanguage": "en-GB",
+                      "publisher": { "@id": "https://ostm.co.uk/#org" },
+                      "description": "Season 1 of The UNRELATED Podcast, featuring the earliest episodes with raw discussions, stories and indie commentary."
+                  }
+              ]
+          }
+      </script>
+      <!-- JSON-JS END -->
+      
   </head>
   <body>
 

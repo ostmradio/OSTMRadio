@@ -7,8 +7,8 @@
     
     <title>OSTM Radio - Replays</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Listen to The UNRELATED Podcast by OSTM Radio right here!">
-    <meta name="keywords" content="radio 2,radio 1,radio times,bbc radio 2,radio 4,radio 4 schedule,heart radio,bbc radio 4,absolute radio,greatest hits radio,radio times tv guide,bbc radio 1,smooth radio,radio,radio 5 live,ibc radio,rado x,magic radio,radio 4 live,radio,live,music,indie,rock,manchester,uk,london,jobs,times,on,quiz,and,me,of,fm,lyrics,songs,2,4,dj,green day,nirvana,artic monkeys,acdc,quarantine the past,the maccabees,app,schedule">
+    <meta name="description" content="Catch up on past OSTM Radio shows, exclusive recordings, and special broadcasts. Listen again to your favourite indie and alternative content.">
+	  <meta name="keywords" content="radio replays, OSTM Radio replays, listen again, radio archives, indie show replays, podcast replays, Manchester radio shows">
     <meta name="author" content="OSTM Radio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->   
@@ -27,7 +27,85 @@
     <link rel="stylesheet" href="/assets/css/owl.carousel.css"/>
     <link rel="stylesheet" href="/assets/css/style.css"/>
     <link rel="stylesheet" href="/assets/css/animate.css"/>
-  
+
+	  <!-- JSON-LD -->
+	  <script type="application/ld+json">
+		  {
+			  "@context": "https://schema.org",
+			  "@graph": [
+				  {
+					  "@type": "Organization",
+					  "@id": "https://ostm.co.uk/#org",
+					  "name": "OSTM LTD",
+					  "alternateName": "OSTM Radio",
+					  "url": "https://ostm.co.uk/",
+					  "logo": "https://ostm.co.uk/assets/img/OSTMSharpLogoWhite.png",
+					  "sameAs": [
+						  "https://x.com/OstmRadio",
+						  "https://www.instagram.com/ostmradio/",
+						  "https://www.youtube.com/@ostmradio"
+					  ],
+					  "contactPoint": [{
+						  "@type": "ContactPoint",
+						  "contactType": "customer support",
+						  "email": "admin@ostm.co.uk",
+						  "areaServed": "GB",
+						  "availableLanguage": ["en-GB","en"]
+					  }]
+				  },
+				  {
+					  "@type": "WebSite",
+					  "@id": "https://ostm.co.uk/#website",
+					  "name": "OSTM Radio",
+					  "url": "https://ostm.co.uk/",
+					  "publisher": { "@id": "https://ostm.co.uk/#org" },
+					  "inLanguage": "en-GB"
+				  },
+				  {
+					  "@type": "RadioStation",
+					  "@id": "https://ostm.co.uk/#station",
+					  "name": "OSTM Radio",
+					  "url": "https://ostm.co.uk/",
+					  "areaServed": "GB",
+					  "broadcaster": { "@id": "https://ostm.co.uk/#org" },
+					  "sameAs": [
+						  "https://x.com/OstmRadio",
+						  "https://www.instagram.com/ostmradio/",
+						  "https://www.youtube.com/@ostmradio"
+					  ],
+					  "genre": ["Indie","Alternative"],
+					  "broadcastService": {
+						  "@type": "RadioBroadcastService",
+						  "name": "OSTM Radio Live",
+						  "url": "https://ostm.co.uk/live/",
+						  "broadcastDisplayName": "OSTM Radio",
+						  "areaServed": "GB",
+						  "genre": ["Indie","Alternative"],
+						  "callSign": "OSTM",
+						  "broadcastFrequency": "Online",
+						  "broadcastAffiliateOf": { "@id": "https://ostm.co.uk/#org" },
+						  "webcast": "https://listen.openstream.co/6235/audio"
+					  }
+				  }
+			  ]
+		  }
+	  </script>
+
+	  <script type="application/ld+json">
+		  {
+			  "@context": "https://schema.org",
+			  "@type": "CollectionPage",
+			  "@id": "https://ostm.co.uk/replays/#webpage",
+			  "url": "https://ostm.co.uk/replays/",
+			  "name": "OSTM Radio – Replays",
+			  "isPartOf": { "@id": "https://ostm.co.uk/#website" },
+			  "about": { "@id": "https://ostm.co.uk/#station" },
+			  "inLanguage": "en-GB",
+			  "description": "Catch up on past OSTM Radio shows, exclusive recordings, and special broadcasts. Listen again to your favourite indie and alternative content."
+		  }
+	  </script>
+	  <!-- JSON-JS END -->
+	  
   </head>
   <body>
 
