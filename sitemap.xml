@@ -1,72 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <url>
+    <loc>https://ostm.co.uk/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
 
-<url>
-  <loc>https://www.ostm.co.uk/</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/theunrelatedpodcast.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/playlist.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/shows.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/app.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/advertise.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/contact.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/volunteer.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/music-publishing-form.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/theunrelatedpodcast-s01.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/theunrelatedpodcast-s02.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.ostm.co.uk/dj.html</loc>
-  <lastmod>2023-06-13T16:33:17+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
+  <url>
+    <loc>https://ostm.co.uk/live/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
+  <url>
+    <loc>https://ostm.co.uk/playlist/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/advertise/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/contact/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/cookie_policy/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/privacy_policy/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/publish/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/replays/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/submission_policy/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/assets/contracts/OSTM_Music_Submission_Contract.pdf</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/replays/unrelated/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/replays/unrelated/season1/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+
+  <url>
+    <loc>https://ostm.co.uk/replays/unrelated/season2/</loc>
+    <lastmod>2025-11-11T18:08:33+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
 
 </urlset>
