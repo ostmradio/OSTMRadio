@@ -188,33 +188,73 @@
     </section>
     <!--  join us section end -->
     <!-- JavaScript code -->
-    <script>function submitForm() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var targetAudience = document.getElementById('target-audience').value;
-            var preferredChannel = document.getElementById('preferred-channel').value;
-            var budget = document.getElementById('budget').value;
-            var additionalInformation = document.getElementById('additional-information').value;
 
-            var payload = {
-                content: `-----\nAdvertising Form\nName: ${name}\nEmail: ${email}\nTarget Audience: ${targetAudience}\nPreferred Channel: ${preferredChannel}\nBudget: ${budget}\nAdditional Information: ${additionalInformation}`
-            };
+		<script>
+			async function submitForm() {
+			const form = document.getElementById("advertise-form");
+			const submitButton = form.querySelector('button[type="submit"]');
 
-            var webhookUrl = 'https://discord.com/api/webhooks/1106573208339107890/xNTdDM857jg_gt5oPP6i0ZUzaHiBj1uPBZXC0dyOO4FJmBhXIV6MaR6yfqy84HPT9D0I';
-            var request = new XMLHttpRequest();
-            request.open('POST', webhookUrl);
-            request.setRequestHeader('Content-type', 'application/json');
-            request.send(JSON.stringify(payload));
+			const workerUrl =
+			"https://ostm-advertising.floral-mud-bab1.workers.dev/";
+
+			// Collect advertising form information
+			const payload = {
+			name: document.getElementById("name").value.trim(),
+			email: document.getElementById("email").value.trim(),
+			objective: document.getElementById("objective").value.trim(),
+			targetAudience: document.getElementById("target-audience").value.trim(),
+			preferredChannel: document.getElementById("preferred-channel").value.trim(),
+			duration: document.getElementById("duration").value.trim(),
+			budget: document.getElementById("budget").value.trim(),
+			additionalInformation: document.getElementById("additional-information").value.trim()
+			};
+
+			// Prevent duplicate submissions
+			submitButton.disabled = true;
+			submitButton.textContent = "Submitting...";
+
+			try {
+			// Send submission to Cloudflare Worker
+			const response = await fetch(workerUrl, {
+			method: "POST",
+			headers: {
+			"Content-Type": "application/json"
+			},
+			body: JSON.stringify(payload)
+			});
+
+			const result = await response.json();
+
+			// Check that Discord accepted the submission
+			if (!response.ok || !result.success) {
+			throw new Error(
+			result.error || "Submission failed."
+			);
+			}
+
+			// Hide form and display success message
+			form.style.display = "none";
+
+			document.getElementById("form-sent-text")
+			.style.display = "block";
+
+			} catch (error) {
+			console.error("Advertising submission error:", error);
+
+			alert(
+			"Sorry, your advertising enquiry could not be sent. " +
+			"Please try again later.\n\n" +
+			error.message
+			);
+
+			// Re-enable submission button
+			submitButton.disabled = false;
+			submitButton.textContent = "Submit";
+			}
+			}
+		</script>
 
 
-            //alert('Advertisement inquiry submitted successfully!');
-
-            // Hide form elements and show "Form Sent" text
-            var form = document.getElementById('advertise-form');
-            form.style.display = 'none';
-            var formSentText = document.getElementById('form-sent-text');
-            formSentText.style.display = 'block';
-        }</script>
 
 
 
@@ -227,9 +267,7 @@
 
 
 
-
-
-    <!--  join us section end -->
+		<!--  join us section end -->
     <!-- Footer Top section -->
     <div data-include="/assets/templates/footer.html"></div>
     <!-- Footer section end -->
@@ -250,11 +288,6 @@
     <script src="/assets/js/circle-progress.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/include.js"></script>
-
-
-    <!-- load for map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
-    <script src="/assets/js/map.js"></script>
 
 </body>
 </html>
