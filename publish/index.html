@@ -5,7 +5,7 @@
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1697524617293667"
               crossorigin="anonymous"></script>
     
-    <title>OSTM Radio - Publish</title>
+    <title>OSTM Radio - Publish_</title>
     <meta charset="UTF-8">
     <meta name="description" content="Submit your music to OSTM Radio for airplay. Independent artists can upload tracks for review and get broadcast on our 24/7 indie station.">
       <meta name="keywords" content="submit music, music submission, indie artist submission, OSTM publish, radio submission form, get airplay, submit your track">
@@ -214,38 +214,74 @@
       </section>
       <!--  join us section end -->
       <!-- JavaScript code -->
-      <script>function submitForm() {
-              var name = document.getElementById('name').value;
-              var email = document.getElementById('email').value;
-              var musicLink = document.getElementById('music-link').value;
-              var coverArt = document.getElementById('cover-art').value;
-              var songTitles = document.getElementById('song-titles').value;
-              var musicGenre = document.getElementById('music-genre').value;
-              var albumSingle = document.querySelector('input[name="album-single"]:checked').value;
-              var ownRights = document.querySelector('input[name="own-rights"]:checked').value;
-              var giveRights = document.querySelector('input[name="give-rights"]:checked').value;
-              var sign = document.getElementById('sign').value;
+
+		  <script>
+			  async function submitForm() {
+			  const form = document.getElementById("advertise-form");
+			  const submitButton = form.querySelector('button[type="submit"]');
+
+			  const workerUrl =
+			  "https://ostm-publishing.floral-mud-bab1.workers.dev/";
+
+			  const selected = (name) =>
+			  document.querySelector(`input[name="${name}"]:checked`)?.value || "";
+
+			  const payload = {
+			  name: document.getElementById("name").value.trim(),
+			  email: document.getElementById("email").value.trim(),
+			  musicLink: document.getElementById("music-link").value.trim(),
+			  coverArt: document.getElementById("cover-art").value.trim(),
+			  songTitles: document.getElementById("song-titles").value.trim(),
+			  musicGenre: document.getElementById("music-genre").value.trim(),
+			  albumSingle: selected("album-single"),
+			  ownRights: selected("own-rights"),
+			  giveRights: selected("give-rights"),
+			  sign: document.getElementById("sign").value.trim()
+			  };
+
+			  // Prevent duplicate submissions
+			  submitButton.disabled = true;
+			  submitButton.textContent = "Submitting...";
+
+			  try {
+			  const response = await fetch(workerUrl, {
+			  method: "POST",
+			  headers: {
+			  "Content-Type": "application/json"
+			  },
+			  body: JSON.stringify(payload)
+			  });
+
+			  const result = await response.json();
+
+			  if (!response.ok || !result.success) {
+			  throw new Error(
+			  result.error || "Submission failed."
+			  );
+			  }
+
+			  // Only show success after Discord accepts the message
+			  form.style.display = "none";
+
+			  document.getElementById("form-sent-text")
+			  .style.display = "block";
+
+			  } catch (error) {
+			  console.error("Submission error:", error);
+
+			  alert(
+			  "Sorry, your submission could not be sent. " +
+			  "Please try again later.\n\n" +
+			  error.message
+			  );
+
+			  submitButton.disabled = false;
+			  submitButton.textContent = "Submit";
+			  }
+			  }
+		  </script>
 
 
-              var payload = {
-                  content: `-----\nMusic Publishing Form\nName: ${name}\nEmail: ${email}\nLink to the artist's music: ${musicLink}\nLink to the artist's cover art: ${coverArt}\nSong Title's: ${songTitles}\nGenre: ${musicGenre}\nIs the submission an album or a single: ${albumSingle}\nDoes the artist own the rights to the music: ${ownRights}\nDoes the artist give rights to play their music on OSTM Radio: ${giveRights}\nSignature: ${sign}`
-              };
-
-              var webhookUrl = 'https://discord.com/api/webhooks/1106599064226758666/fUPSXcnqgAOc-97Ck5sgjKQTbLrR6qCtSJCckWI2lmarU2L7ArdhV1oyCXUG2IOVmOUd';
-              var request = new XMLHttpRequest();
-              request.open('POST', webhookUrl);
-              request.setRequestHeader('Content-type', 'application/json');
-              request.send(JSON.stringify(payload));
-
-
-              //alert('Advertisement inquiry submitted successfully!');
-
-              // Hide form elements and show "Form Sent" text
-              var form = document.getElementById('advertise-form');
-              form.style.display = 'none';
-              var formSentText = document.getElementById('form-sent-text');
-              formSentText.style.display = 'block';
-          }</script>
 
 
 
@@ -258,9 +294,7 @@
 
 
 
-
-
-      <!--  join us section end -->
+		  <!--  join us section end -->
       <!-- Footer Top section -->
       <div data-include="/assets/templates/footer.html"></div>
       <!-- Footer section end -->
@@ -281,11 +315,6 @@
       <script src="/assets/js/circle-progress.min.js"></script>
       <script src="/assets/js/main.js"></script>
       <script src="/assets/js/include.js"></script>
-
-
-      <!-- load for map -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
-      <script src="/assets/js/map.js"></script>
 
   </body>
 </html>
