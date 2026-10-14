@@ -3,7 +3,27 @@
   "artists": [
     {
       "name": "Alesia",
-      "songs": [ "Escosia" ]
+      "songs": [
+        "Escosia"
+      ]
+    },
+    {
+      "name": "Alex Comaish",
+      "songs": [
+        "Damp Streets"
+      ]
+    },
+    {
+      "name": "Asjad",
+      "songs": [
+        "Me and You"
+      ]
+    },
+    {
+      "name": "Aurste Band",
+      "songs": [
+        "You Were Never Mine to Lose"
+      ]
     },
     {
       "name": "Bailey Spinn",
@@ -13,6 +33,173 @@
         "Romance is Dead",
         "Runner Up",
         "Told You So"
+      ]
+    },
+    {
+      "name": "Black & White, Digital",
+      "songs": [
+        "Last Days Of Youth"
+      ]
+    },
+    {
+      "name": "Callow Cal",
+      "songs": [
+        "It's Been a Year"
+      ]
+    },
+    {
+      "name": "The Dan Kirouac Band",
+      "songs": [
+        "Silver Wishes"
+      ]
+    },
+    {
+      "name": "Death Of Death",
+      "songs": [
+        "Heart Of Glass",
+        "Love",
+        "Sally",
+        "Say What You Mean",
+        "Wounds"
+      ]
+    },
+    {
+      "name": "Dirty Slippers",
+      "songs": [
+        "Honest Kid"
+      ]
+    },
+    {
+      "name": "Each Confide",
+      "songs": [
+        "What We've Started"
+      ]
+    },
+    {
+      "name": "Ethan Carter",
+      "songs": [
+        "It Should Be Me"
+      ]
+    },
+    {
+      "name": "Ghost of a Memory",
+      "songs": [
+        "My Friend",
+        "Clinical Distance",
+        "Visceral",
+        "Down"
+      ]
+    },
+    {
+      "name": "Harry Jxye",
+      "songs": [
+        "Fake Friends",
+        "Party Alone",
+        "Sixteen",
+        "One Last Time",
+        "Vibes",
+        "Daddy Issues",
+        "S.O.S",
+        "The Untold Story",
+        "King Of The Unseen",
+        "Bye Bye"
+      ]
+    },
+    {
+      "name": "Jonas Park",
+      "songs": [
+        "Firecracker Kid",
+        "Indie Romeo",
+        "King of Anchors",
+        "Magpie",
+        "Shaky",
+        "Venus, Venus"
+      ]
+    },
+    {
+      "name": "Kai Ross-Best",
+      "songs": [
+        "This House Is Haunted",
+        "This Winter"
+      ]
+    },
+    {
+      "name": "Lapse",
+      "songs": [
+        "October"
+      ]
+    },
+    {
+      "name": "Montreo",
+      "songs": [
+        "Give All Your Loving To Me",
+        "The Runaway's Blues",
+        "My Love (My Life)",
+        "The Way I Do",
+        "Tell Me More",
+        "One More Another Chance",
+        "Maybe I Don't Know You",
+        "Don't Stay Up Waiting For Me",
+        "Wind Speaks Of Sorrow",
+        "A Lie We Met"
+      ]
+    },
+    {
+      "name": "Morning Color",
+      "songs": [
+        "Never Coming Back"
+      ]
+    },
+    {
+      "name": "SELF-APPOINTED PROPHETS",
+      "songs": [
+        "You're Out Of Time"
+      ]
+    },
+    {
+      "name": "Skies Behind",
+      "songs": [
+        "I Love It"
+      ]
+    },
+    {
+      "name": "Tenderhooks",
+      "songs": [
+        "Queen Of The Green Screen",
+        "Wait"
+      ]
+    },
+    {
+      "name": "The Southgates",
+      "songs": [
+        "Citrus Tree"
+      ]
+    },
+    {
+      "name": "Thousand Pieces",
+      "songs": [
+        "Hey Man. Amen."
+      ]
+    },
+    {
+      "name": "Tom Alford",
+      "songs": [
+        "Feels Like Winning",
+        "Nothing Comes Between Us"
+      ]
+    },
+    {
+      "name": "Yoni Babitsky",
+      "songs": [
+        "Wait",
+        "Alive",
+        "Enigmatica"
+      ]
+    },
+    {
+      "name": "Greebo",
+      "songs": [
+        "Reminiscing"
       ]
     }
   ]
