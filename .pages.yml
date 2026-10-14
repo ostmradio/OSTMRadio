@@ -1,0 +1,33 @@
+
+media: media
+
+content:
+  - name: playlist
+    label: Current Radio Playlist
+    type: file
+    path: playlist/playlist.json
+    format: json
+    fields:
+      - name: updated
+        label: Last Updated
+        type: date
+        required: true
+
+      - name: artists
+        label: Artists
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            label: Artist Name
+            type: string
+            required: true
+
+          - name: songs
+            label: Songs
+            type: string
+            list: true
+            required: true
