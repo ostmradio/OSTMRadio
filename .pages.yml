@@ -3,7 +3,7 @@ media: media
 
 content:
   - name: playlist
-    label: Current Radio Playlist
+    label: Live Playlist
     type: file
     path: playlist/playlist.json
     format: json
